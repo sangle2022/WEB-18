@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="imge">
+    <img src="https://sso.masaischool.com/brand_dark.svg" alt="suru"/>
+    </div>
+    <h1>signup</h1>
+    <form>
+        <input id="username" type="text" placeholder="username">
+        <input id="email" type="text" placeholder="email">
+        <input id="password" type="text" placeholder="password">
+        <input  type="submit" value="submit">
+    </form>
+</body>
+</html>
+<script>
+    var form=document.querySelector("form");
+    form.addEventListener("submit",function(event){
+    event.preventDefault();
+    
+    var data={
+        username:form.username.value,
+        email:form.email.value,
+        password:form.password.value
+
+
+    }
+    window.location.href="login.html";
+    localStorage.setItem("userdata",JSON.stringify(data));
+})
+    
+</script>
