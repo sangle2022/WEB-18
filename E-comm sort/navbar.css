@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding-left: 0px;
+}
+.nav{
+    display: flex;
+    height: 80px;
+    width: 95%;
+    margin: auto;
+   
+
+}
+.logo{
+    width: 5%;
+    
+    margin: auto;
+   
+}
+.text{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 80px;
+}
+.user{
+    width:30%;
+    display: flex;
+    margin: auto;
+    /* justify-content: space-between; */
+    
+}
+.user>h2{
+  margin-left: 90px;
+}
